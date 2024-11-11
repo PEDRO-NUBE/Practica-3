@@ -1,3 +1,26 @@
-frasese motivadoras 
-el que tenga miedo a morir q no nazca
-
+Ejercicio 6:
+# Ejercicio de selección para la Marina
+def seleccionar_postulante(genero, edad, altura, peso, puntaje):
+    if genero == "Mujer" and edad >= 18 and altura >= 1.60 and 55 <= peso <= 60 and puntaje > 65:
+        return "SELECCIONADA"
+    elif genero == "Hombre" and edad >= 18 and altura >= 1.65 and 55 <= peso <= 60 and puntaje > 65:
+        return "SELECCIONADO"
+    else:
+        return "NO SELECCIONADO"
+
+# Ejemplo de datos
+datos = ["Mujer", 20, 1.62, 58, 70]
+print(seleccionar_postulante(*datos))
+
+Ejercicio 7:
+
+# Ejercicio de verificación TUC
+def verificar_tuc(genero, edad, examen_medico, conocimiento, manejo, pago):
+    if edad >= 18 and examen_medico and conocimiento > 80 and manejo > 95 and pago >= 10:
+        return "APTO TUC"
+    else:
+        return "NO APTO TUC"
+
+# Ejemplo de datos
+datos_tuc = ["Mujer", 25, True, 85, 96, 10]
+print(verificar_tuc(*datos_tuc))
